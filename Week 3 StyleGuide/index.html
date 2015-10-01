@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Style Guide For OffGrid </h1>
+    <h2>Thomas Edmunds: 301178089</h2>
+
+    <nav>
+      
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+      <p>Other pages:</p>
+      <ul>
+        <li><a href="wireframes.html">User-flows</a>
+        <li><a href="Citations.html">Citations</a>
+      </ul>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button-nav" href="#">Navigation Button</a>
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.link-text</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="link-text"&gt;In-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="link-text" href="#">In-text link</a>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-form-submit</p>
+        <p>.button-form-reset</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button type="submit" value="Submit" class="button-form-submit"&gt;Submit&lt;/button&gt;</code>
+        <code>&lt;button type="reset" value="Reset" class="button-form-reset"&gt;Reset&lt;/button&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <button type="submit" value="Submit" class="button-form-submit">Submit</button>
+        <button type="reset" value="Reset" class="button-form-reset">Reset</button>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.input-label</p>
+        <p>.input-text</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;label class="input-label" for="inputname"&gt;Input Field:&lt;label&gt</code>
+        <code>&lt;input type="text" class="input-text" name="inputname" placeholder="text input field"&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <label class="input-label" for="inputname">INPUT FIELD</label>
+        <input type="text" class="input-text" name="inputname" placeholder="text input field">
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings 1</h2>
+
+        <!-- Highest Level header -->
+        <h3>CSS selector:</h3>
+        <p>.big-header</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1 class="big-header"&gt;Example Header&lt;h1&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h1 class="big-header">EXAMPLE HEADER</h1>
+      </section>
+      <section>
+        <h2>Headings 2</h2>
+        <!-- Next Level header -->
+        <h3>CSS selector:</h3>
+        <p>.body-header</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h2 class="body-header"&gt;Example Header&lt;h2&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h2 class="body-header">Example Header</h2>
+      </section>
+      <section>
+        <h2>Headings 3</h2>
+        <!-- Next Level header -->
+        <h3>CSS selector:</h3>
+        <p>.sub-header</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h3 class="sub-header"&gt;Example Header&lt;h3&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h3 class="sub-header">Example Header</h3>
+
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.body-text</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p class="body-text"&gt;...text...&lt;p&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <p class="body-text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.point-list</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class="point-list"&gt; &lt;li&gt;&lt;/li&gt; &lt;ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ul class="point-list">
+          <li>Point one</li>
+          <li>Point three</li>
+          <li>Point four</li>
+          <li>Point five</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.numbered-list</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ol class="numbered-list"&gt; &lt;li&gt;&lt;/li&gt; &lt;ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ol class="numbered-list">
+          <li>List point one</li>
+          <li>List point three</li>
+          <li>List point four</li>
+          <li>List point five</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.main-nav-box</p>
+        <p>.main-nav-col</p>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="main-nav-box"&gt;<br>
+                &lt;div class="main-nav-col"&gt;<br>
+                  &lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <div class="main-nav-box">
+          <div class="main-nav-col">
+            <a class="button-nav" href="#">Link A</a>
+          </div>
+          <div class="main-nav-col">
+            <a class="button-nav" href="#">Link B</a>
+          </div>
+          <div class="main-nav-col">
+            <a class="button-nav" href="#">Link C</a>
+          </div>
+          <div class="main-nav-col">
+            <a class="button-nav" href="#">Link D</a>
+          </div>
+          <div class="main-nav-col">
+            <a class="button-nav" href="#">Link E</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.product-grid</p>
+        <p>.product-element</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="product-grid"&gt;<br>
+                &lt;a class="product-element" href="#"&gt;<br>
+                  &lt;h3&gt;PRODUCT NAME&lt;/h3&gt;<br>
+                  &lt;img src="img/url"&gt;<br>
+                &lt;/a&gt;<br>
+              &lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <div class="product-grid">
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+            <img src="img/product_example1.jpg">
+          </a>
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+             <img src="img/product_example2.jpg">
+          </a>
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+            <img src="img/product_example1.jpg">
+          </a>
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+            <img src="img/product_example2.jpg">
+          </a>
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+            <img src="img/product_example1.jpg">
+          </a>
+          <a class="product-element" href="">
+            <h3>PRODUCT XYZ</h3>
+            <img src="img/product_example2.jpg">
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Website Grid Structure</h2>
+
+        <h3>CSS selector:</h3>
+
+        <h3>Sample code:</h3>
+
+        <h3>Rendered element:</h3>
+        
+        <div class="main-grid">
+          <div class="grid-item-header">
+            <h1 class="big-header">Header Area</h1>
+          </div>
+
+          <div class="grid-item-nav">
+            <div class="main-nav-box">
+              <div class="main-nav-col">
+                <a class="button-nav" href="#">Link A</a>
+              </div>
+              <div class="main-nav-col">
+                <a class="button-nav" href="#">Link B</a>
+              </div>
+              <div class="main-nav-col">
+                <a class="button-nav" href="#">Link C</a>
+              </div>
+              <div class="main-nav-col">
+                <a class="button-nav" href="#">Link D</a>
+              </div>
+              <div class="main-nav-col">
+                <a class="button-nav" href="#">Link E</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item-article">
+            <h2 class="body-header">Header Yo</h2>
+            <p class="body-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+          </div>
+
+          <div class="grid-item-components">
+            <ul>
+              <li>
+                <a href="#" class="button-nav">
+                  Component
+                </a>
+                <a href="#" class="button-form-submit">
+                  ?
+                </a>
+              </li>
+              <li>
+              <a href="#" class="button-nav">
+                  Component
+                </a>
+                <a href="#" class="button-form-submit">
+                  ?
+                </a>
+              </li>
+              <li>
+              <a href="#" class="button-nav">
+                  Component
+                </a>
+                <a href="#" class="button-form-submit">
+                  ?
+                </a>
+              </li>
+              <li>
+              <a href="#" class="button-nav">
+                  Component
+                </a>
+                <a href="#" class="button-form-submit">
+                  ?
+                </a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+  </body>
+</html>
