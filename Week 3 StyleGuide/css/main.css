@@ -306,14 +306,17 @@ cite {
   overflow: hidden;
 
   -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
 
 
+/* Drop shadow to make the product element rise off the page when you hover it */
 .product-element:hover,
 .product-element:focus {
-  -webkit-box-shadow: inset 0em 0em 3em 0em;
-  box-shadow: inset 0em 0em 3em 0em;
+  -webkit-box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 1.0);
+  -moz-box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 1.0);
+  box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 1.0);
 }
 
 .product-element h3 {
@@ -395,7 +398,7 @@ cite {
 }
 
 /* Secondary navigation? where lists and stuff goes in site grid*/
-.grid-item-components {
+.grid-item-list-area {
   max-width: 30em;
 
   -webkit-flex-grow: 0.3;
@@ -407,12 +410,12 @@ cite {
   flex-basis: 15em;
 }
 
-.grid-item-components ul {
+.grid-item-list-area ul {
   margin: 0em;
   padding: 0em;
 }
 
-.grid-item-components ul li {
+.grid-item-list-area ul li {
   margin: 0em;
   margin-bottom: 0.1em;
   display: block;
@@ -423,11 +426,11 @@ cite {
 /* Small display settings */
 @media (max-width: 35em) {
 
-  .grid-item-components {
+  .grid-item-list-area {
     max-width: 100%;
   }
 
-  .grid-item-components ul li {
+  .grid-item-list-area ul li {
     min-width: auto;
   }
 
