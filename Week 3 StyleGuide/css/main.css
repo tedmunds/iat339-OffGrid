@@ -113,7 +113,9 @@ cite {
 
 
 .button-nav:hover, 
-.button-nav:focus {
+.button-nav:focus,
+.button-nav-sub:hover,
+.button-nav-sub:focus {
   background-color: #1E5E2F;
 }
 
@@ -266,28 +268,24 @@ cite {
 */
 
 /* Main navigation bar */
-.main-nav-box {
+/*.main-nav-box {
   width: 100%;
-  /*max-width: 50em;*/
-  /*background-color: #4CAE4E;*/
   height: auto;
-}
+}*/
 
-.main-nav-box:after {
+/*.main-nav-box:after {
   content: "";
   display: block;
   clear: both;
 }
-
-.main-nav-col {
+*/
+/*.main-nav-col {
   float: left;
   width: 17%;
   min-width: 7rem;
   padding: 0em;
   margin-right: 1.6em;
-  /*margin-left: 0.5em;*/
-  /*border-right: 1.1em solid #FFF;*/
-}
+}*/
 
 /*
   less than 30em it should collapse nac to one line-per button

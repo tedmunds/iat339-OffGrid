@@ -1,0 +1,303 @@
+
+@font-face {
+font-family: Norwester;
+	src: url("fonts/norwester.otf") format("opentype");
+}
+
+/* Set box sizing mode to be border box */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  	font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------- SITE GRID STYLING ------------- */
+
+ .main-grid {
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	/* wrap child elements that are too-wide for their current row */
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+ }
+
+ /* Header element for site grid */
+.grid-item-header {
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+}
+
+/* Main navigation bar */
+.grid-item-nav {
+	width: 100%;
+	min-height: 3em;
+	margin-bottom: 1em;
+
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+}
+
+/* Clear floats for navigation, since nav buttons are floated */
+.grid-item-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* Secondary navigation */
+.grid-item-nav-sub {
+	max-width: 100%;
+
+	-webkit-flex-grow: 0.3;
+	-ms-flex-grow: 0.3;
+	flex-grow: 0.3;
+
+	-webkit-flex-basis: 15em;
+	-ms-flex-basis: 15em;
+	flex-basis: 15em;
+}
+
+/* The main content area */
+.grid-item-content {
+	-webkit-flex-grow: 0.7;
+	-ms-flex-grow: 0.7;
+	flex-grow: 0.7;
+
+	/*max-width: 55em;*/
+
+	-webkit-flex-basis: 20em;
+	-ms-flex-basis: 20em;
+	flex-basis: 20em;
+}
+
+/* larger display settings */
+@media (min-width: 35em) {
+
+	.grid-item-content {
+		-webkit-flex-grow: 0.95;
+		-ms-flex-grow: 0.95;
+		flex-grow: 0.95;
+	}
+
+	.grid-item-nav-sub {
+		/*max-width: 30em;*/
+		-webkit-flex-grow: 0.05;
+		-ms-flex-grow: 0.05;
+		flex-grow: 0.05;
+	}
+}
+
+/* ------------- END OF SITE GRID STYLING ------------- */
+
+/* ------------- ELEMENT STYLING ------------- */
+
+/* Button base for all of the main buttons */
+.button-base, 
+.button-nav, 
+.button-nav-sub {
+	display: inline-block;
+	float: left;
+	padding: 0.5em 0.75em;
+	font-family: 'Roboto Slab';
+	color: #FFF;
+	background-color: #4CAE4E;
+	text-decoration: none;
+	width: 100%;
+
+	-webkit-transition: background-color 0.2s ease-out;
+  	transition: background-color 0.2s ease-out;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  margin-right: 0;
+  margin-bottom: 0.1rem;
+}
+
+/* Styling for the sub navigation button */
+.button-nav-sub {
+  background-color: #76e178;
+  margin-bottom: 0.1rem;
+}
+
+/* Media querey for all nav buttons on larger screens */
+@media (min-width: 35em) {
+
+	.button-nav {
+		max-width: 24.8%;
+		margin-right: 0.2%;
+	}
+
+	.button-nav-sub {
+		margin-right: 0;
+	}
+}
+
+.button-base:hover,
+.button-base:focus,
+.button-nav:hover, 
+.button-nav:focus,
+.button-nav-sub:hover,
+.button-nav-sub:focus {
+  background-color: #1E5E2F;
+}
+
+
+/* In text link styling */
+.link-text {
+   color: #3374BA;
+   text-decoration: none;
+}
+
+.link-text:hover,
+.link-text:focus {
+  color: #14499E;
+  text-decoration: underline;
+}
+
+
+/* Input button */
+.button-form-submit,
+.button-form-reset {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  margin: 0em;
+  font-family: 'Roboto Slab';
+  color: #FFF;
+  background-color: #3374BA;
+  text-decoration: none;
+  vertical-align: top;
+  border: none;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.button-form-reset {
+  background-color: #4CAE4E;
+}
+
+.button-form-submit:hover, 
+.button-form-submit:focus {
+  background-color: #14499E;
+}
+
+.button-form-reset:hover, 
+.button-form-reset:focus {
+  background-color: #1E5E2F;
+}
+
+
+/* Text box input */
+.input-text {
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  border: none;
+  border: 0.1em solid #999;
+
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+
+.input-text:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0em 0em 0.4em 0em;
+  box-shadow: inset 0em 0em 0.4em 0em;
+}
+
+.input-label {
+  font-weight: light;
+  display: block;
+  color: #999;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* Header for big things */
+.big-header {
+  color: #000;
+  font-family: 'Norwester';
+  font-size: 3em;
+  padding: 0;
+  margin: 0.5rem;
+}
+
+/* Header for body text */
+.body-header {
+  color: #000;
+  font-family: 'Roboto Slab';
+  margin: 0.2em 0em 0.3em 0em;
+}
+
+/* Header for small things and product listings */
+.sub-header {
+  font-family: 'Open Sans';
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Main body text */
+.body-text {
+  max-width: 50rem;
+  width: 80%;
+  font-family: 'Open Sans';
+}
+
+
+/* A bulleted list */
+.point-list {
+  list-style-position: inside;
+  /*list-style-type: none;*/
+  padding-left: 0em;
+}
+/*
+.point-list li {
+  color: #000;
+  border-left: 1em #4CAE4E solid;
+  padding: 0em 0em 0em 0.2em;
+  margin: 0.2em 0em;
+}*/
+
+
+/* A numbered list */
+.numbered-list {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0em;
+  
+}
+
+.numbered-list li {
+  counter-increment: step-counter;
+   margin: 0.2em 0em;
+}
+
+.numbered-list li::before {
+  content: counter(step-counter);
+  display: inline-block;
+  margin-right: 0.75rem;
+  background-color: #4CAE4E;
+  color: #FFF;
+  width: 1em;
+  height: 100%;
+  font-family: 'Roboto Slab';
+  font-size: 1.1rem;
+  text-align: center;
+}
