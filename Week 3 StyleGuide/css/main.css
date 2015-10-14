@@ -87,7 +87,7 @@ cite {
   padding: 0.75em 0.75em;
   font-family: 'Roboto Slab';
   color: #FFF;
-  background-color: #4CAE4E;
+  background-color: #3fb0ac;
   text-decoration: none;
   width: 100%;
   /*max-width: 15rem;*/
@@ -102,7 +102,7 @@ cite {
   padding: 0.75em 0.75em;
   font-family: 'Roboto Slab';
   color: #FFF;
-  background-color: #4CAE4E;
+  background-color: #3fb0ac;
   text-decoration: none;
   width: 100%;
   max-width: 15rem;
@@ -116,7 +116,7 @@ cite {
 .button-nav:focus,
 .button-nav-sub:hover,
 .button-nav-sub:focus {
-  background-color: #1E5E2F;
+  background-color: #173e43;
 }
 
 
@@ -141,7 +141,7 @@ cite {
   margin: 0em;
   font-family: 'Roboto Slab';
   color: #FFF;
-  background-color: #3374BA;
+  background-color: #3fb0ac;
   text-decoration: none;
   vertical-align: top;
   border: none;
@@ -151,17 +151,17 @@ cite {
 }
 
 .button-form-reset {
-  background-color: #4CAE4E;
+  background-color: #3fb0ac;
 }
 
 .button-form-submit:hover, 
 .button-form-submit:focus {
-  background-color: #14499E;
+  background-color: #173e43;
 }
 
 .button-form-reset:hover, 
 .button-form-reset:focus {
-  background-color: #1E5E2F;
+  background-color: #173e43;
 }
 
 
@@ -231,7 +231,7 @@ cite {
 
 .point-list li {
   color: #000;
-  border-left: 1em #4CAE4E solid;
+  border-left: 1em #3fb0ac solid;
   padding: 0em 0em 0em 0.2em;
   margin: 0.2em 0em;
 }
@@ -254,7 +254,7 @@ cite {
   content: counter(step-counter);
   display: inline-block;
   margin-right: 0.75rem;
-  background-color: #4CAE4E;
+  background-color: #3fb0ac;
   color: #FFF;
   width: 1em;
   height: 100%;
