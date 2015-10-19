@@ -12,8 +12,12 @@ font-family: Norwester;
 }
 
 body {
-    background-color: #dddfd4;
+    background-color: #FFF;
   	font-family: 'Open Sans', sans-serif;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* ------------- SITE GRID STYLING ------------- */
@@ -31,58 +35,60 @@ body {
 	-webkit-align-items: stretch;
 	-ms-align-items: stretch;
 	align-items: stretch;
+
+  flex: 1 0 auto;
+  flex-direction: column;
  }
 
  /* Header element for site grid */
 .grid-item-header {
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
+  width: 100%;
+  flex: none;
+
+  background-color: #dddfd4;
 }
 
 /* Main navigation bar */
 .grid-item-nav {
 	width: 100%;
-	min-height: 3em;
-	margin-bottom: 1em;
+	margin-bottom: 0;
+  padding-bottom: 0;
 
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
+  flex: none;
 }
 
 /* Clear floats for navigation, since nav buttons are floated */
 .grid-item-nav:after {
-  content: "";
-  display: block;
   clear: both;
 }
 
 
+.grid-item-body {
+  flex: 1 0 0;
+  padding: 0;
+  margin: 0;
+
+}
+
 /* Secondary navigation */
 .grid-item-nav-sub {
-	max-width: 100%;
+  background-color: #328A87;
+  margin-top: 0;
+  padding-top: 0;
 
-	-webkit-flex-grow: 0.3;
-	-ms-flex-grow: 0.3;
-	flex-grow: 0.3;
-
-	-webkit-flex-basis: 15em;
-	-ms-flex-basis: 15em;
-	flex-basis: 15em;
+  flex: none;
 }
 
 /* The main content area */
 .grid-item-content {
-	-webkit-flex-grow: 0.7;
-	-ms-flex-grow: 0.7;
-	flex-grow: 0.7;
-
-	/*max-width: 55em;*/
-
 	-webkit-flex-basis: 20em;
 	-ms-flex-basis: 20em;
 	flex-basis: 20em;
+}
+
+.main-grid-inner {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Sub conent grids that go inside the main content section */
@@ -102,23 +108,39 @@ body {
   flex-basis: auto;
 }
 
+.grid-item-footer {
+  width: 100%;
+  background-color: #dddfd4;
+  padding-left: 2em;
+}
+
 /* larger display settings */
 @media (min-width: 35em) {
 
-	.grid-item-content {
-		-webkit-flex-grow: 0.95;
-		-ms-flex-grow: 0.95;
-		flex-grow: 0.95;
+  .main-grid {
+    flex-direction: column;
+  }
 
+  .grid-item-body {
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+  }
+
+	.grid-item-content {
     padding-left: 2rem;
+    flex: 1;
+    height: 100%;
 	}
 
 	.grid-item-nav-sub {
-		/*max-width: 30em;*/
-		-webkit-flex-grow: 0.05;
-		-ms-flex-grow: 0.05;
-		flex-grow: 0.05;
+    flex: 1;
+    max-width: 15em;
 	}
+
+  .main-grid-inner {
+    flex-direction: row;
+  }
 }
 
 /* ------------- END OF SITE GRID STYLING ------------- */
@@ -138,20 +160,34 @@ body {
 	text-decoration: none;
 	width: 100%;
 
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+
 	-webkit-transition: background-color 0.2s ease-out;
-  	transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 
 /* Styling for the navigation button */
 .button-nav {
   margin-right: 0;
-  margin-bottom: 0.1rem;
 }
 
 /* Styling for the sub navigation button */
 .button-nav-sub {
-  background-color: #3fb0ac;
+  background-color: #328A87;
   margin-bottom: 0.1rem;
+  text-decoration: underline;
+}
+
+.button-nav-sub:focus,
+.button-nav-sub:hover {
+  background-color: #328A87;
+  color: #3fb0ac;
+}
+
+.button-nav:hover, 
+.button-nav:focus, {
+  background-color: #173e43;
 }
 
 /* Media querey for all nav buttons on larger screens */
@@ -166,16 +202,6 @@ body {
 		margin-right: 0;
 	}
 }
-
-.button-base:hover,
-.button-base:focus,
-.button-nav:hover, 
-.button-nav:focus,
-.button-nav-sub:hover,
-.button-nav-sub:focus {
-  background-color: #173e43;
-}
-
 
 /* In text link styling */
 .link-text {
