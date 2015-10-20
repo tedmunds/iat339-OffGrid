@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<!-- TODO: Should move to a more robust css font setup -->
@@ -5,7 +6,7 @@
     	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
 		<meta charset="utf-8">
-	    <title>Services</title>
+	    <title>History</title>
 
 	    <link href="css/normalize.css" rel="stylesheet">
 	    <link href="css/main.css" rel="stylesheet">
@@ -19,29 +20,55 @@
 
 				<form class="form-search">
 					<input type="text" class="input-text" name="inputname" placeholder="search">
+					<input type="submit" value="go" class="button-form-submit">
 				</form>
-			</div>
-			
-			<!-- CPromary navigation bar: link to other pages -->
-			<div class="grid-item-nav">
-				<a class="button-nav" href="#">Products</a>
-				<a class="button-nav" href="company_info.html">News/Events</a>
-				<a class="button-nav" href="company_services.html">Services</a>
-				<a class="button-nav" href="#">About</a>
+
+				<!-- CPromary navigation bar: link to other pages -->
+				<div class="grid-item-nav">
+					<a class="button-nav" href="product_solarpanels.html">Products</a>
+					<a class="button-nav" href="company_news.html">News/Events</a>
+					<a class="button-nav" href="company_services.html">Services</a>
+					<a class="button-nav" href="company_info_about.html">About</a>
+				</div>
 			</div>
 
-			<!-- Sub navigation: in page content controls -->
-			<div class="grid-item-nav-sub">
-				<a class="button-nav-sub" href="account_management.html">Account Management</a>
+			<div class="grid-item-body">
+			
+				<!-- Sub navigation: in page content controls -->
+				<div class="grid-item-nav-sub">
+					<a class="button-nav-sub" href="account_management.html">Account Management</a>
 				<a class="button-nav-sub" href="account_review.html">Add Review</a>
 				<a class="button-nav-sub" href="account_history.html">Purchasing History</a>
+				</div>
+
+				<!-- Content area -->
+				<div class="grid-item-content">
+					<h2 class="body-header">View your purchasing history here!</h2>
+
+					<p class="body-text">You havn't made any purchaces yet! You can browse our products <a href="product_solarpanels.html">here</a>.</p>
+				</div>
+
 			</div>
 
-			<!-- Content area -->
-			<div class="grid-item-content">
-				<h2 class="body-header">View your purchasing history here!</h2>
-			</div>
+			<div class="grid-item-footer">
+				<div class="centered-content">
+					<p class="body-text">Feel free to get in contact with Off Grid, we would love to hear from you! Also follow us on Twitter and Facebook: </p>
 
+					<div>
+						<ul>
+							<li><a href="company_info_contact.html">send us an email</a></li>
+							<li><a href="login.html">sign in</a></li>
+						</ul>
+
+						<ul>
+							<li><a href="#">twitter</a></li>
+							<li><a href="#">facebook</a></li>
+						</ul>
+					</div>
+
+					<p class="body-text">(c) 2015 Thomas Edmunds & Gary Chi</p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

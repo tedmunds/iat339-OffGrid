@@ -20,16 +20,19 @@
 				
 				<form class="form-search">
 					<input type="text" class="input-text" name="inputname" placeholder="search">
+					<input type="submit" value="go" class="button-form-submit">
 				</form>
+
+				<!-- CPromary navigation bar: link to other pages -->
+				<div class="grid-item-nav">
+					<a class="button-nav" href="product_solarpanels.html">Products</a>
+					<a class="button-nav" href="company_news.html">News/Events</a>
+					<a class="button-nav" href="company_services.html">Services</a>
+					<a class="button-nav" href="company_info_about.html">About</a>
+				</div>
 			</div>
 
-			<!-- CPromary navigation bar: link to other pages -->
-			<div class="grid-item-nav">
-				<a class="button-nav" href="#">Products</a>
-				<a class="button-nav" href="company_info.html">News/Events</a>
-				<a class="button-nav" href="company_services.html">Services</a>
-				<a class="button-nav" href="#">About</a>
-			</div>
+			
 
 			<!-- Sub navigation: in page content controls -->
 			<!--<div class="grid-item-nav-sub">
@@ -44,26 +47,54 @@
 			</div>-->
 
 			<!-- Content area -->
-		<div class="center">
+			<div class="grid-item-body">
+				<div class="centered-content">
 
-			<div class="grid-item-content">
-				<div style="width:300px;height:300px;border:4px solid #000;">profile img</div>
+					<h2 class="body-header">Sign in to your Off Grid Accout</h2>
+					<p class="body-text">This is an optional step, you may skip it an instead just enter your billing info. However, only members may leave product reviews.</p>
 
-				<div class="input-wrapper">
-          		<label for="form-comment">username</label>
-          		<textarea id="form-comment" placeholder=""></textarea>
-        		</div>
-        		<div class="input-wrapper">
-          		<label for="form-comment">password </label>
-          		<textarea id="form-comment" placeholder=""></textarea>
-        		</div>
+					<!-- <div class="input-text"> -->
+						<!--<div style="width:300px;height:300px;border:1px solid #000;">profile img</div>-->
 
-        		<input type="submit" value="login">
+						<form class="input-wrapper">
+			          		<label for="form-comment" class="input-label">username</label>
+			          		<input type="text" id="form-comment" placeholder="" class="input-text"></textarea>
+			        		
+			        		
+			          		<label for="form-comment" class="input-label">password </label>
+			          		<input type="text" id="form-comment" placeholder="" class="input-text"></textarea>
 
+			          		<div>
+			          			<!-- <input type="submit" value="login" class="button-form-submit"> -->
+				          		<!-- <input type="submit" value="skip" class="button-form-reset"> -->
+				          		<a href="account_management.html" class="button-form-submit">Login</a>
+				          		<a href="checkout.html" class="button-form-reset">Skip</a>
+			          		</div>
+		        		</form>
+					<!-- </div> -->
 
+				</div>
 			</div>
 
-		</div>
+			<div class="grid-item-footer">
+				<div class="centered-content">
+					<p class="body-text">Feel free to get in contact with Off Grid, we would love to hear from you! Also follow us on Twitter and Facebook: </p>
+
+					<div>
+						<ul>
+							<li><a href="company_info_contact.html">send us an email</a></li>
+							<li><a href="login.html">sign in</a></li>
+						</ul>
+
+						<ul>
+							<li><a href="#">twitter</a></li>
+							<li><a href="#">facebook</a></li>
+						</ul>
+					</div>
+
+					<p class="body-text">(c) 2015 Thomas Edmunds & Gary Chi</p>
+				</div>
+			</div>
 
 		</div>
 	</body>
