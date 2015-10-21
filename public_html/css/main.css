@@ -245,6 +245,35 @@ body {
   text-decoration: underline;
 }
 
+ /* checkout */
+
+.choose-button {
+  display: inline-block;
+  padding: 2em 2em;
+  margin: 0em;
+  margin-top: 1em;
+  margin-right: 1em;
+  font-family: 'Roboto Slab';
+  color: #FFF;
+  background-color: #173e43;
+  text-decoration: none;
+  vertical-align: top;
+  border: none;
+}
+.pay-button {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  margin: 0em;
+  margin-top: 5em;
+  margin-right: 1em;
+  font-family: 'Roboto Slab';
+  color: #FFF;
+  background-color: #fae596;
+  text-decoration: none;
+  vertical-align: top;
+  border: none;
+}
+
 
 /* Input button */
 .button-form-submit, 
