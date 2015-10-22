@@ -72,11 +72,13 @@ body {
 
 /* Secondary navigation */
 .grid-item-nav-sub {
-  background-color: #328A87;
+  /*background-color: #328A87;*/
+  background-color: #FFF;
   margin-top: 0;
   padding-top: 0;
 
   border-top: 0.5em #fae596 solid;
+  border-right: 2px #999 dotted;
 
   flex: none;
 }
@@ -190,8 +192,13 @@ body {
 .button-nav-sub, 
 .button-nav-sub-product, 
 .button-nav-sub-product-active {
-  background-color: #328A87;
+  /*background-color: #328A87;*/
+  background-color: #FFF;
+  color: #328A87;
   text-decoration: underline;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 
 .button-nav-sub:focus, 
@@ -537,7 +544,8 @@ body {
 }
 
 .button-nav-sub-product-active {
-  color: #fae596;
+  /*color: #fae596;*/
+  color: #000;
 }
 
 .product-grid {
@@ -646,4 +654,23 @@ body {
   .news-entry {
     width: 80%;
   }
+}
+
+/*
+  Video placeholder -----------------
+*/
+
+.video-area {
+  display: block;
+  /*width: 100%;*/
+  height: 20rem;
+
+  width: 30rem;
+
+  border: 2px #999 dotted;
+}
+
+.video-area video {
+  width: 100%;
+  height: 100%;
 }
