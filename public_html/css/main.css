@@ -78,9 +78,12 @@ body {
   padding-top: 0;
 
   border-top: 0.5em #fae596 solid;
-  border-right: 2px #999 dotted;
+  border-right: none;
+  border-bottom: 2px #999 dotted;
 
-  flex: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
 }
 
 /* The main content area */
@@ -143,6 +146,8 @@ body {
 
 	.grid-item-nav-sub {
     border-top: 1em #fae596 solid;
+    border-right: 2px #999 dotted;
+    border-bottom: none;
     flex: 1;
     max-width: 15em;
 	}
@@ -152,8 +157,8 @@ body {
   }
 
   .centered-content {
-    width: 50%;
-    margin-left: 15em;
+    width: 80%;
+    /*margin-left: 15em;*/
   }
 }
 
@@ -290,6 +295,7 @@ body {
   margin: 0em;
   margin-top: 1em;
   margin-right: 1em;
+  margin-bottom: 0.5em;
   font-family: 'Roboto Slab';
   color: #FFF;
   background-color: #173e43;
@@ -408,7 +414,7 @@ body {
 .body-text {
   max-width: 50rem;
   min-width: 10rem;
-  width: 80%;
+  width: 100%;
   font-family: 'Open Sans';
   font-size: 0.9rem;
 }
@@ -452,6 +458,12 @@ body {
   text-align: center;
 }
 
+
+@media (min-width: 35em) {
+  .body-text {
+    max-width: 80%;
+  }
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -502,6 +514,12 @@ body {
   margin: 0 0 1em 0; 
   float: left;
   display: block;
+}
+
+.input-wrapper textarea {
+  margin-top: 1em;
+  width: 100%;
+  height: 6em;
 }
 
 /* Media querey for all nav buttons on larger screens */
@@ -618,6 +636,7 @@ body {
   font-weight: normal;
 }
 
+
 @media (min-width: 35em) {
 
   .product-image {
@@ -633,8 +652,38 @@ body {
 
 }
 
+
 /*
-  New Feed Scrollingg list area ---------------
+  Product review styling -----------------------------
+*/
+
+.product-review img{
+  max-width: 100%;
+  display: inline-block;
+}
+
+.product-info .body-header {
+  color: #555;
+}
+
+.product-review .product-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-review .review-area {
+  display: block;
+}
+
+.review-area textarea {
+  display: block;
+  width: 95%;
+  max-width: 50em;
+  height: 10em;
+}
+
+/*
+  News Feed Scrolling list area ---------------
 */
 
 .news-feed {
@@ -679,4 +728,18 @@ body {
 .video-area video {
   width: 100%;
   height: 100%;
+}
+
+
+.video-standin {
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 100%;
+}
+
+/*
+  Javascript hooks ------------------------
+*/
+.colapsed {
+  display: none;
 }
