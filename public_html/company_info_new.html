@@ -38,11 +38,16 @@
 			
 				<!-- Sub navigation: in page content controls -->
 				<div class="grid-item-nav-sub">
-					<ul>
-						<li><a class="button-nav-sub" href="company_info_about.html">About Us</a></li>
-						<li><a class="button-nav-sub" href="company_info_new.html">New Products</a></li>
-						<li><a class="button-nav-sub" href="company_info_contact.html">Contact Info</a></li>
-					</ul>
+					<div id="menu-btn" class="colapsed">
+						More Of Us
+					</div>
+					<div id="drop-down">
+						<ul>
+							<li><a class="button-nav-sub" href="company_info_about.html">About Us</a></li>
+							<li><a class="button-nav-sub" href="company_info_new.html">New Products</a></li>
+							<li><a class="button-nav-sub" href="company_info_contact.html">Contact Info</a></li>
+						</ul>
+					</div>
 				</div>
 
 				<!-- Content area -->
@@ -107,5 +112,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Script load is last thing in a document -->
+		<script src="js/jquery.js"></script>
+    	<script src="js/offgrid.js"></script>
 	</body>
 </html>

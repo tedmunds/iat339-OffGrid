@@ -37,15 +37,22 @@
 			<div class="grid-item-body">
 				<!-- Product navigation bar: drop down lists of products -->
 				<div class="grid-item-nav-sub">
-					<ul class="product-list">
-						<li><a class="button-nav-sub-product-active" href="product_solarpanels.html">Solar Panels</a></li>
-						<li><a class="button-nav-sub-product" href="product_batteries.html">Batteries</a></li>
-						<li><a class="button-nav-sub-product" href="#">Inverters</a></li>
-						<li><a class="button-nav-sub-product" href="#">Monitors</a></li>
-						<li><a class="button-nav-sub-product" href="#">Geo thermal</a></li>
-						<li><a class="button-nav-sub-product" href="#">Wind</a></li>
-						<li><a class="button-nav-sub-product" href="#">Misc</a></li>
-					</ul>
+					<div id="menu-btn" class="colapsed">
+						Categories
+					</div>
+					<div id="drop-down">
+
+						<ul class="product-list">
+							<li><a class="button-nav-sub-product-active" href="product_solarpanels.html">Solar Panels</a></li>
+							<li><a class="button-nav-sub-product" href="product_batteries.html">Batteries</a></li>
+							<li><a class="button-nav-sub-product" href="#">Inverters</a></li>
+							<li><a class="button-nav-sub-product" href="#">Monitors</a></li>
+							<li><a class="button-nav-sub-product" href="#">Geo thermal</a></li>
+							<li><a class="button-nav-sub-product" href="#">Wind</a></li>
+							<li><a class="button-nav-sub-product" href="#">Misc</a></li>
+						</ul>
+
+					</div>
 				</div>
 
 				<div class="grid-item-content">
@@ -129,5 +136,9 @@
 			</div>
 
 		</div>
+
+		<!-- Script load is last thing in a document -->
+		<script src="js/jquery.js"></script>
+    	<script src="js/offgrid.js"></script>
 	</body>
 </html>

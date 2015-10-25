@@ -91,6 +91,9 @@ body {
 	-webkit-flex-basis: 20em;
 	-ms-flex-basis: 20em;
 	flex-basis: 20em;
+
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main-grid-inner {
@@ -140,6 +143,7 @@ body {
 
 	.grid-item-content {
     padding-left: 2rem;
+    padding-right: 0;
     flex: 1;
     height: 100%;
 	}
@@ -752,4 +756,25 @@ body {
 */
 .colapsed {
   display: none;
+}
+
+/* Main menu drop down button */
+#menu-btn {
+  background-color: #fae596;
+  font-family: 'Roboto slab' sarif;
+  color: #FFF;
+  padding: 0.2em 0 0.5em 0;
+  text-align: center;
+
+  /* It acts as a btn so it needs to look like it */
+  cursor: pointer;
+
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#menu-btn:focus, 
+#menu-btn:hover {
+  background-color: #E3CB6F;
 }

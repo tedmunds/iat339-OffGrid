@@ -6,6 +6,8 @@
     	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	    <title>Services</title>
 
 	    <link href="css/normalize.css" rel="stylesheet">
@@ -36,11 +38,16 @@
 			
 				<!-- Sub navigation: in page content controls -->
 				<div class="grid-item-nav-sub">
-					<a class="button-nav-sub" href="company_services.html">Deals and Discounts</a>
-					<a class="button-nav-sub" href="company_services_repair.html">Repairs</a>
-					<a class="button-nav-sub" href="company_services_install.html">Installations</a>
-					<a class="button-nav-sub" href="company_services_shipping.html">Shipping</a>
-					<a class="button-nav-sub" href="company_services_quotes.html">Quotes</a>
+					<div id="menu-btn" class="colapsed">
+						Our Services
+					</div>
+					<div id="drop-down">
+						<a class="button-nav-sub" href="company_services.html">Deals and Discounts</a>
+						<a class="button-nav-sub" href="company_services_repair.html">Repairs</a>
+						<a class="button-nav-sub" href="company_services_install.html">Installations</a>
+						<a class="button-nav-sub" href="company_services_shipping.html">Shipping</a>
+						<a class="button-nav-sub" href="company_services_quotes.html">Quotes</a>
+					</div>
 				</div>
 
 				<!-- Content area -->
@@ -89,7 +96,7 @@
 		</div>
 
 		<!-- Script load is last thing in a document -->
-		<!-- <script src="js/jquery.js"></script> -->
-    	<!-- <script src="js/offgrid.js"></script> -->
+		<script src="js/jquery.js"></script>
+    	<script src="js/offgrid.js"></script>
 	</body>
 </html>
