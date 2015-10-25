@@ -169,6 +169,7 @@ body {
 /* Button base for all of the main buttons */
 .button-base, 
 .button-nav, 
+.button-nav-active, 
 .button-nav-sub, 
 .button-nav-sub-product, 
 .button-nav-sub-product-active {
@@ -186,11 +187,17 @@ body {
 }
 
 /* Styling for the navigation button */
-.button-nav {
+.button-nav, 
+.button-nav-active {
   margin-right: 0;
 
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
+}
+
+.button-nav-active {
+  background-color: #328A87;
+  color: #fae596;
 }
 
 /* Styling for the sub navigation button */
@@ -217,7 +224,9 @@ body {
 }
 
 .button-nav:focus, 
-.button-nav:hover {
+.button-nav:hover, 
+.button-nav-active:focus, 
+.button-nav-active:hover {
   background-color: #328A87;
 }
 
@@ -235,7 +244,8 @@ body {
 /* Media querey for all nav buttons on larger screens */
 @media (min-width: 35em) {
 
-	.button-nav {
+	.button-nav, 
+  .button-nav-active {
 		max-width: 25%;
     border-right: 1px #FFF solid;
 	}
