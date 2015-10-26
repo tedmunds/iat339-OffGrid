@@ -44,6 +44,7 @@ body {
 .grid-item-header {
   width: 100%;
   flex: none;
+  position: relative;
 
   background-color: #dddfd4;
 }
@@ -245,6 +246,15 @@ body {
   display: block;
 }
 
+.header-link {
+  position: absolute;
+  right: 10%;
+  top: 3em;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+
 /* Media querey for all nav buttons on larger screens */
 @media (min-width: 35em) {
 
@@ -257,6 +267,12 @@ body {
 	.button-nav-sub {
 		margin-right: 0;
 	}
+
+  .header-link {
+    right: 2em;
+    top: 0;
+    padding: 0 0 0.5em 0;
+  }
 }
 
 /* In text link styling */
