@@ -39,9 +39,14 @@
 			
 				<!-- Sub navigation: in page content controls -->
 				<div class="grid-item-nav-sub">
-					<a class="button-nav-sub" href="account_management.html">Account Management</a>
-				<a class="button-nav-sub" href="account_review.html">Add Review</a>
-				<a class="button-nav-sub" href="account_history.html">Purchasing History</a>
+					<div id="menu-btn" class="colapsed">
+						More Actions
+					</div>
+					<div id="drop-down">
+						<a class="button-nav-sub" href="account_management.html">Account Management</a>
+						<a class="button-nav-sub" href="account_review.html">Add Review</a>
+						<a class="button-nav-sub" href="account_history.html">Purchasing History</a>
+					</div>
 				</div>
 
 				<!-- Content area -->
@@ -56,7 +61,7 @@
 								<h2 class="body-header">Sun Master X12 Pro</h2>
 
 								<p class="body-text">Sun Master's hottest new panel that will make you look like a pro. 2000W peak output like a boss.</p>
-								<p><strong>average review</strong> * * * </p>
+								<p>User Reviews: ★★★☆☆ (34)</p>
 							</div>
 						</div>
 						<div class="review-area">
@@ -92,5 +97,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Script load is last thing in a document -->
+		<script src="js/jquery.js"></script>
+    	<script src="js/offgrid.js"></script>
 	</body>
 </html>
