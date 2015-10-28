@@ -81,20 +81,49 @@ cite {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
-.button-nav {
+.button-nav, 
+.button-nav, 
+.button-nav-active, 
+.button-nav-sub, 
+.button-nav-sub-product, 
+.button-nav-sub-product-active{
   display: inline-block;
-  padding: 0.75em 0.75em;
+  float: left;
+  padding: 0.5em 0.75em;
   font-family: 'Roboto Slab';
   color: #FFF;
-  background-color: #3fb0ac;
+  background-color: #173e43;
   text-decoration: none;
   width: 100%;
-  /*max-width: 15rem;*/
 
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
+  margin-right: 0;
+
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
+
+
+
+@media (min-width: 35em) {
+
+  .button-nav, 
+  .button-nav-active {
+    max-width: 22.925%;
+    border-right: 1px #FFF solid;
+  }
+
+  .button-nav-sub {
+    margin-right: 0;
+  }
+
+  .header-link {
+    right: 2em;
+    top: 0;
+    padding: 0 0 0.5em 0;
+  }
+}
+
+
 
 
 .button-nav-sub {
@@ -355,11 +384,9 @@ cite {
   media querie for product listing, needs to go vertical 
 */
 @media (max-width: 25em) {
-
   .product-element {
     width: 100%;
   }
-
 }
 
 /* 
@@ -379,26 +406,151 @@ cite {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
   align-items: stretch;
+
+  flex: 1 0 auto;
+  flex-direction: column;
+
+      flex-direction: column;
+
  }
 
 
 /* Header element for site grid */
 .grid-item-header {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
+  width: 100%;
+  flex: none;
+  position: relative;
+
+  background-color: #dddfd4;
 }
+
+.grid-item-body {
+  flex: 1 0 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.grid-item-footer {
+  width: 100%;
+  background-color: #3fb0ac;
+}
+
+.grid-item-footer ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  margin-right: 5em;
+}
+
+.grid-item-footer ul a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+  font-style: italic;
+
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+/* footer links */
+.grid-item-footer ul a:hover, 
+.grid-item-footer ul a:focus {
+  color: #328A87;
+}
+
+.grid-item-footer .centered-content div {
+  display: block;
+  float: left;
+}
+
+.grid-item-footer:after {
+  clear: both;
+}
+.centered-content {
+  margin: auto;
+  width: 80%;
+}
+
+@media (min-width: 35em) {
+  .centered-content {
+    width: 80%;
+    /*margin-left: 15em;*/
+  }
+}
+
+.grid-item-nav-sub {
+  /*background-color: #328A87;*/
+  background-color: #FFF;
+  margin-top: 0;
+  padding-top: 0;
+
+  border-top: 0.5em #fae596 solid;
+  border-right: none;
+  border-bottom: 2px #999 dotted;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.grid-item-nav-sub ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-item-nav-sub ul li {
+  display: block;
+}
+
+.point-list {
+  list-style-position: inside;
+  /*list-style-type: none;*/
+  padding-left: 0em;
+}
+
+.product-list {
+  position: relative;
+}
+
+/* Styling for the sub navigation button */
+.button-nav-sub, 
+.button-nav-sub-product, 
+.button-nav-sub-product-active {
+  /*background-color: #328A87;*/
+  background-color: #FFF;
+  color: #328A87;
+  text-decoration: underline;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.button-nav-sub:focus, 
+.button-nav-sub:hover, 
+.button-nav-sub-product:focus, 
+.button-nav-sub-product:hover, 
+.button-nav-sub-product-active:focus, 
+.button-nav-sub-product-active:hover {
+  background-color: #328A87;
+  color: #3fb0ac;
+}
+
+
+
 
 /* Main navigation bar grid area */
 .grid-item-nav {
-  /*background-color: #4CAE4E;*/
   width: 100%;
-  min-height: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block;
 
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
+  flex: none;
 }
 
 /* The main text / image area of site grid */
